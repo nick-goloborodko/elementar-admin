@@ -16,6 +16,7 @@ import { provideNativeDateAdapter } from '@angular/material/core';
 import { environment } from '../environments/environment';
 import { ENVIRONMENT, EnvironmentService, GlobalStore, PageTitleStrategyService } from '@elementar/components/core';
 import { provideI18n } from '@angular/localize';
+import { LanguageService } from './services/language.service';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -30,8 +31,11 @@ export const appConfig: ApplicationConfig = {
     provideAppInitializer(() => {
       const envService = inject(EnvironmentService);
       const globalStore = inject(GlobalStore);
+      const languageService = inject(LanguageService);
       return new Promise((resolve, reject) => {
         globalStore.setPageTitle(envService.getValue('pageTitle'));
+        const savedLanguage = languageService.getCurrentLanguage();
+        languageService.setCurrentLanguage(savedLanguage);
         resolve(true);
       });
     }),

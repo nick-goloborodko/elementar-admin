@@ -52,7 +52,7 @@
       </trans-unit>
       <trans-unit id="header.upgrade" datatype="html">
         <source>Upgrade</source>
-        <target>Upgrade</source>
+        <target>Upgrade</target>
       </trans-unit>
     </body>
   </file>
