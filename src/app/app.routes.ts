@@ -21,6 +21,39 @@ export const routes: Routes = [
     ]
   },
   {
+    path: 'en',
+    loadComponent: () => import('./common/common.component').then(c => c.CommonComponent),
+    children: [
+      {
+        path: '',
+        pathMatch: 'full',
+        loadComponent: () => import('./main/main.component').then(c => c.MainComponent),
+      }
+    ]
+  },
+  {
+    path: 'es',
+    loadComponent: () => import('./common/common.component').then(c => c.CommonComponent),
+    children: [
+      {
+        path: '',
+        pathMatch: 'full',
+        loadComponent: () => import('./main/main.component').then(c => c.MainComponent),
+      }
+    ]
+  },
+  {
+    path: 'ru',
+    loadComponent: () => import('./common/common.component').then(c => c.CommonComponent),
+    children: [
+      {
+        path: '',
+        pathMatch: 'full',
+        loadComponent: () => import('./main/main.component').then(c => c.MainComponent),
+      }
+    ]
+  },
+  {
     path: '**',
     title: 'Page Not Found',
     loadComponent: () => import('./error/not-found/not-found.component').then(c => c.NotFoundComponent)

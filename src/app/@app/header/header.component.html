@@ -150,10 +150,16 @@
     <span>Help Center</span>
   </a>
   <mat-divider></mat-divider>
-  <a mat-menu-item>
+  <a mat-menu-item [matMenuTriggerFor]="languageMenu">
     <mat-icon>translate</mat-icon>
     <span>Language</span>
   </a>
+  <mat-menu #languageMenu="matMenu">
+    <button mat-menu-item (click)="setLanguage('en')">English</button>
+    <button mat-menu-item (click)="setLanguage('es')">Spanish</button>
+    <button mat-menu-item (click)="setLanguage('ru')">Russian</button>
+    <button mat-menu-item (click)="setLanguage('en-NZ')">English (NZ)</button>
+  </mat-menu>
   <a mat-menu-item>
     <mat-icon>add</mat-icon>
     <span>Add Account</span>

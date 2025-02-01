@@ -10,6 +10,7 @@ import {
   ScreenLoaderService, SeoService,
   ThemeManagerService
 } from '@elementar/components/core';
+import { LanguageService } from './services/language.service';
 
 @Component({
     selector: 'app-root',
@@ -30,6 +31,7 @@ export class AppComponent implements OnInit {
   private _envService = inject(EnvironmentService);
   private _platformId = inject(PLATFORM_ID);
   private _router = inject(Router);
+  private _languageService = inject(LanguageService);
 
   loadingText = signal('Application Loading');
   pageLoaded = signal(false);
@@ -73,5 +75,8 @@ export class AppComponent implements OnInit {
     }
 
     this._seoService.trackCanonicalChanges(this._envService.getValue('siteUrl'));
+
+    const savedLanguage = this._languageService.getCurrentLanguage();
+    this._languageService.setCurrentLanguage(savedLanguage);
   }
 }

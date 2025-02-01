@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="header.title" datatype="html">
+        <source>Elementar Admin</source>
+        <target>Elementar Admin</target>
+      </trans-unit>
+      <trans-unit id="header.github" datatype="html">
+        <source>Github</source>
+        <target>Github</target>
+      </trans-unit>
+      <trans-unit id="header.applications" datatype="html">
+        <source>Applications</source>
+        <target>Applications</target>
+      </trans-unit>
+      <trans-unit id="header.notifications" datatype="html">
+        <source>Notifications</source>
+        <target>Notifications</target>
+      </trans-unit>
+      <trans-unit id="header.colorTheme" datatype="html">
+        <source>Color Theme</source>
+        <target>Color Theme</target>
+      </trans-unit>
+      <trans-unit id="header.account" datatype="html">
+        <source>Account</source>
+        <target>Account</target>
+      </trans-unit>
+      <trans-unit id="header.language" datatype="html">
+        <source>Language</source>
+        <target>Language</target>
+      </trans-unit>
+      <trans-unit id="header.addAccount" datatype="html">
+        <source>Add Account</source>
+        <target>Add Account</target>
+      </trans-unit>
+      <trans-unit id="header.logout" datatype="html">
+        <source>Logout</source>
+        <target>Logout</target>
+      </trans-unit>
+      <trans-unit id="header.settings" datatype="html">
+        <source>Settings</source>
+        <target>Settings</target>
+      </trans-unit>
+      <trans-unit id="header.appearance" datatype="html">
+        <source>Appearance</source>
+        <target>Appearance</target>
+      </trans-unit>
+      <trans-unit id="header.helpCenter" datatype="html">
+        <source>Help Center</source>
+        <target>Help Center</target>
+      </trans-unit>
+      <trans-unit id="header.upgrade" datatype="html">
+        <source>Upgrade</source>
+        <target>Upgrade</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
